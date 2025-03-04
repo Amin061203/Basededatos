@@ -8,7 +8,8 @@ USE GAMINGSTORE;
  );
  
  CREATE TABLE IF NOT EXISTS StockLocation(
- IDStockLocation INT PRIMARY KEY NOT NULL AUTO_INCREMENT
+ IDStockLocation INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+ Rack VARCHAR(50)
  );
  
  CREATE TABLE IF NOT EXISTS Developers(
@@ -16,4 +17,27 @@ USE GAMINGSTORE;
  NamesDEV VARCHAR(100),
  Console VARCHAR(100)
  );
+ 
+ INSERT INTO GAMES(Namegame)
+ VALUES ('halo infinite'),
+		('Gears of war 5'),
+        ('Doom eternal'),
+        ('Atomicheart'),
+        ('Metro Exodus');
+  INSERT INTO    StockLocation(Rack)
+  VALUES ('Halo Games'),
+		('Gears Games'),
+        ('Doom Games'),
+        ('Survival Horror'),
+        ('Metro Saga');
+  INSERT INTO  Developers( NamesDEV,Console)
+  VALUES ('NamesDEV','343 industries'),
+		('NamesDEV','The coalition'),
+        ('NamesDEV','idsoftwware'),
+        ('NamesDEV','Capcom,mundfish'),
+        ('NamesDEV','4A Games'),
+        ('Console','XBOX'),
+        ('Console','PlayStation'),
+        ('Console','Nintendo');
+        
  
