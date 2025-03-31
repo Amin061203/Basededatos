@@ -24,7 +24,7 @@ USE GAMINGSTORE;
         ('Doom eternal'),
         ('Atomicheart'),
         ('Metro Exodus');
-  INSERT INTO    StockLocation(Rack)
+ INSERT INTO StockLocation(Rack)
   VALUES ('Halo Games'),
 		('Gears Games'),
         ('Doom Games'),
@@ -39,5 +39,20 @@ USE GAMINGSTORE;
         ('Console','XBOX'),
         ('Console','PlayStation'),
         ('Console','Nintendo');
-        
+SELECT * FROM  GAMES;
+    
+ UPDATE GAMES
+ SET Namegame = 'Bioshock'
+ WHERE IDGAMES = 1;
  
+ SELECT * FROM  StockLocation;
+    
+ UPDATE StockLocation
+ SET Rack = 'Bioshock Games'
+ WHERE IDStockLocation = 2;
+ 
+SELECT * FROM  Developers;
+    
+ UPDATE  Developers
+ SET Rack = 'Bioshock Games'
+ WHERE  IDDevelopers = 3; 
